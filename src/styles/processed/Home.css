@@ -1,0 +1,172 @@
+:root {
+  --font1: "helvetica-w01-bold", sans-serif;
+  --font2: "helvetica", sans-serif;
+  --lightgreen: #399D81;
+  --semiblack: #151E1D;
+  --white: #ffffff;
+  --grey: #949494;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font2);
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+}
+.main-container .section {
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.main-container .landing {
+  background-image: url(../../assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: 150vw;
+  background-position-x: -60vh;
+  background-position-y: -85vh;
+}
+.main-container .landing .banner {
+  display: flex;
+  color: transparent;
+  align-items: center;
+  padding: 20px 8%;
+}
+.main-container .landing .banner .logo {
+  width: 160px;
+}
+.main-container .landing .banner .nav-bar {
+  text-align: right;
+  flex: 1;
+  margin-top: 8px;
+}
+.main-container .landing .banner .nav-bar a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: var(--semiblack);
+  transition: all 0.15s linear;
+}
+.main-container .landing .banner .nav-bar a:hover {
+  color: var(--lightgreen);
+}
+.main-container .landing .banner .nav-bar .active {
+  color: var(--lightgreen);
+}
+.main-container .landing .banner .nav-bar button {
+  cursor: pointer;
+  outline: none;
+  border-style: none;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--lightgreen);
+  border: solid 2px var(--lightgreen);
+  border-radius: 20px;
+  height: 40px;
+  width: 130px;
+  margin-left: 20px;
+  transition: all 0.2s linear;
+}
+.main-container .landing .banner .nav-bar button:hover {
+  background: var(--lightgreen);
+  color: var(--white);
+}
+.main-container .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  background: var(--semiblack);
+}
+.main-container .about .text-wrapper {
+  color: var(--white);
+  width: 500px;
+}
+.main-container .about .text-wrapper h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.main-container .about .text-wrapper h1 span {
+  color: var(--lightgreen);
+}
+.main-container .about .text-wrapper p {
+  font-size: 1.2em;
+}
+.main-container .about img {
+  max-width: 60%;
+  max-height: 60%;
+}
+.main-container .about-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 90vh;
+  background: var(--white);
+}
+.main-container .about-2 img {
+  max-width: 50%;
+  max-height: 50%;
+}
+.main-container .about-2 .text-wrapper {
+  width: 500px;
+}
+.main-container .about-2 .text-wrapper h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.main-container .about-2 .text-wrapper h1 span {
+  color: var(--lightgreen);
+}
+.main-container .about-2 .text-wrapper p {
+  font-size: 1.2em;
+}
+.main-container .party {
+  z-index: -1;
+}
+.main-container .party .layer {
+  inset: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(-300px) scale(2.1);
+}
+.main-container .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 70vh;
+  background: var(--white);
+}
+.main-container .end h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+.main-container .end h1 span {
+  color: var(--lightgreen);
+}
+.main-container .end p {
+  color: var(--grey);
+}
+.main-container #about-2 {
+  z-index: 0;
+}
+.main-container #partylax {
+  z-index: -1;
+}
+.main-container #partylax > .layer {
+  background-image: url(../../assets/PARTY-3.jpg);
+  background-size: cover;
+}
+
+/*# sourceMappingURL=Home.css.map */
