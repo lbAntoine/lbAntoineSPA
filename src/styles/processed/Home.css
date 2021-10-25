@@ -155,8 +155,20 @@
 .main-container .end h1 span {
   color: var(--lightgreen);
 }
-.main-container .end p {
+.main-container .end .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-container .end .footer p {
   color: var(--grey);
+}
+.main-container .end .footer .footer-socials a img {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 10px;
+  filter: invert(67%) sepia(2%) saturate(35%) hue-rotate(356deg) brightness(89%) contrast(87%);
 }
 .main-container #about-2 {
   z-index: 0;

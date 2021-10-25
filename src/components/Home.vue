@@ -9,7 +9,7 @@
           <a href="#landing" class="active">Home</a>
           <a href="#about">About</a>
           <a href="">Work</a>
-          <a href="">Resume</a>
+          <a href="Resume">Resume</a>
           <button>Contact Antoine</button>
         </div>
       </div>
@@ -41,8 +41,14 @@
     <!-- End -->
     <div class="section end" id="around">
       <h1 class="mot-de-fin">I am also an <span>amateur photographer</span><br>and <span>philosophy reader</span>. A <span>cat lover</span>,<br><span>card game player</span>, <span>coffee drinker</span> and <span>pizza fanatic</span>.</h1>
-      <p class="footer-text">fueled with fun and big dreams :)</p>
-      <div class="footer-socials"></div>
+      <div class="footer">
+        <p class="footer-text">fueled with fun and big dreams :)</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/antoine-le-bras/"><img src="../assets/linkedin2.png"/></a>
+          <a href=""><img src="../assets/twitter2.png"/></a>
+          <a href="https://github.com/lbAntoine"><img src="../assets/github.png"/></a>
+        </div>
+      </div>
     </div>
 
   </div>

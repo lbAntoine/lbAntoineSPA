@@ -180,12 +180,26 @@
       }
     }
 
-    p {
-      color: var(--grey);
-    }
+    .footer {
+      @include align-center;
+      flex-direction: column;
 
-    .footer-socials {
-
+      p {
+        color: var(--grey);
+      }
+  
+      .footer-socials {
+  
+        a {
+          
+          img {
+            height: 1.5em;
+            width: 1.5em;
+            margin: 10px;
+            filter: invert(67%) sepia(2%) saturate(35%) hue-rotate(356deg) brightness(89%) contrast(87%);
+          }
+        }
+      }
     }
   }
 
