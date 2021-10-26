@@ -8,7 +8,7 @@
         <div class="nav-bar">
           <a href="/">Home</a>
           <a href="/">About</a>
-          <a href="/Projects">Projects</a>
+          <a href="/Projects" class="active">Projects</a>
           <a href="/Resume">Resume</a>
           <button>Contact Antoine</button>
         </div>
@@ -18,3 +18,7 @@
     
   </div>
 </template>
+
+<style lang="css">
+  @import '../styles/processed/Work.css';
+</style>

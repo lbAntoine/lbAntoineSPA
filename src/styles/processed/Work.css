@@ -1,0 +1,82 @@
+:root {
+  --font1: "helvetica-w01-bold", sans-serif;
+  --font2: "helvetica", sans-serif;
+  --lightgreen: #399D81;
+  --semiblack: #151E1D;
+  --white: #ffffff;
+  --grey: #949494;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font2);
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+}
+.main-container .section {
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.main-container .landing {
+  background-image: url(../../assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: 150vw;
+  background-position-x: -60vh;
+  background-position-y: -85vh;
+}
+.main-container .landing .banner {
+  display: flex;
+  color: transparent;
+  align-items: center;
+  padding: 20px 8%;
+}
+.main-container .landing .banner .logo {
+  width: 160px;
+}
+.main-container .landing .banner .nav-bar {
+  text-align: right;
+  flex: 1;
+  margin-top: 8px;
+}
+.main-container .landing .banner .nav-bar a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: var(--semiblack);
+  transition: all 0.15s linear;
+}
+.main-container .landing .banner .nav-bar a:hover {
+  color: var(--lightgreen);
+}
+.main-container .landing .banner .nav-bar .active {
+  color: var(--lightgreen);
+}
+.main-container .landing .banner .nav-bar button {
+  cursor: pointer;
+  outline: none;
+  border-style: none;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--lightgreen);
+  border: solid 2px var(--lightgreen);
+  border-radius: 20px;
+  height: 40px;
+  width: 130px;
+  margin-left: 20px;
+  transition: all 0.2s linear;
+}
+.main-container .landing .banner .nav-bar button:hover {
+  background: var(--lightgreen);
+  color: var(--white);
+}
+
+/*# sourceMappingURL=Work.css.map */

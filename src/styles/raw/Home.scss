@@ -98,7 +98,9 @@
   .about {
     @include align-center;
     justify-content: space-evenly;
-    background: var(--semiblack);
+    // background: var(--semiblack);
+    background: rgb(21,30,29);
+    background: linear-gradient(180deg, rgba(21,30,29,1) 50%, rgba(64,80,79,1) 100%);
 
     .text-wrapper {
       color: var(--white);
@@ -121,6 +123,66 @@
     img {
       max-width: 60%;
       max-height: 60%;
+    }
+  }
+
+  .devto {
+    @include align-center;
+    justify-content: space-evenly;
+    background: rgb(64,80,79);
+    background: linear-gradient(180deg, rgba(64,80,79,1) 0%, rgba(255,255,255,1) 100%);
+
+    .mask {
+      @include align-center;
+      position: relative;
+      height: 350px;
+      width: 600px;
+      border-radius: 4px;
+      transition: all 0.2s linear;
+      overflow: hidden;
+      cursor: pointer;
+
+      .devpage {
+        position: absolute;
+        width: 150%;
+        left: -25%;
+        transition: transform 1.5s;
+        top: 0px;
+      }
+
+      &:hover .devpage {
+        transform: translateY(calc((0px) - 300px - 50px));
+      }      
+    }
+
+    .text-wrapper {
+      width: 500px;
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+
+        span {
+          color: var(--lightgreen);
+          transition: all 0.15s linear;
+        }
+
+        a {
+          text-decoration: none;
+
+          .link:hover {
+            color: var(--white);
+          }
+        }
+      }
+
+      p {
+        font-size: 1.2em;
+
+        img {
+          width: 20px;
+        }
+      }
     }
   }
 
@@ -201,6 +263,10 @@
         }
       }
     }
+  }
+
+  #devto {
+    z-index: 0;
   }
 
   #about-2 {

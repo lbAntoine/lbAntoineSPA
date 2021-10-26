@@ -83,7 +83,8 @@
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
-  background: var(--semiblack);
+  background: #151e1d;
+  background: linear-gradient(180deg, #151e1d 50%, #40504f 100%);
 }
 .main-container .about .text-wrapper {
   color: var(--white);
@@ -102,6 +103,59 @@
 .main-container .about img {
   max-width: 60%;
   max-height: 60%;
+}
+.main-container .devto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  background: #40504f;
+  background: linear-gradient(180deg, #40504f 0%, white 100%);
+}
+.main-container .devto .mask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 350px;
+  width: 600px;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+  overflow: hidden;
+  cursor: pointer;
+}
+.main-container .devto .mask .devpage {
+  position: absolute;
+  width: 150%;
+  left: -25%;
+  transition: transform 1.5s;
+  top: 0px;
+}
+.main-container .devto .mask:hover .devpage {
+  transform: translateY(-350px);
+}
+.main-container .devto .text-wrapper {
+  width: 500px;
+}
+.main-container .devto .text-wrapper h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.main-container .devto .text-wrapper h1 span {
+  color: var(--lightgreen);
+  transition: all 0.15s linear;
+}
+.main-container .devto .text-wrapper h1 a {
+  text-decoration: none;
+}
+.main-container .devto .text-wrapper h1 a .link:hover {
+  color: var(--white);
+}
+.main-container .devto .text-wrapper p {
+  font-size: 1.2em;
+}
+.main-container .devto .text-wrapper p img {
+  width: 20px;
 }
 .main-container .about-2 {
   display: flex;
@@ -169,6 +223,9 @@
   width: 1.5em;
   margin: 10px;
   filter: invert(67%) sepia(2%) saturate(35%) hue-rotate(356deg) brightness(89%) contrast(87%);
+}
+.main-container #devto {
+  z-index: 0;
 }
 .main-container #about-2 {
   z-index: 0;
