@@ -1,19 +1,7 @@
 <template>
   <div class="main-container">
     <!-- Landing -->
-    <div class="section landing" id="landing">
-      <!-- Banner -->
-      <div class="banner">
-        <img src="../assets/lbAntoine@2x.png" class="logo">
-        <div class="nav-bar">
-          <a href="#landing" class="active">Home</a>
-          <a href="#about">About</a>
-          <a href="/Projects">Projects</a>
-          <a href="/Resume">Resume</a>
-          <button>Contact Antoine</button>
-        </div>
-      </div>
-    </div>
+    <div class="section landing" id="landing"></div>
 
     <!-- About -->
     <div class="section about" id="about">
@@ -50,13 +38,13 @@
     </div>
 
     <!-- End -->
-    <div class="section end" id="around">
+    <div class="end" id="around">
       <h1 class="mot-de-fin">I am also an <span>amateur photographer</span><br>and <span>philosophy reader</span>. A <span>cat lover</span>,<br><span>card game player</span>, <span>coffee drinker</span> and <span>pizza fanatic</span>.</h1>
       <div class="footer">
         <p class="footer-text">fueled with fun and big dreams :)</p>
         <div class="footer-socials">
           <a href="https://www.linkedin.com/in/antoine-le-bras/" target="_blank"><img src="../assets/linkedin2.png"/></a>
-          <a href="" target="_blank"><img src="../assets/twitter2.png"/></a>
+          <a href="https://twitter.com/tomato_wizard" target="_blank"><img src="../assets/twitter2.png"/></a>
           <a href="https://github.com/lbAntoine" target="_blank"><img src="../assets/github.png"/></a>
         </div>
       </div>

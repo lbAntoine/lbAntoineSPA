@@ -40,59 +40,7 @@
     background-size: 150vw;
     background-position-x: -60vh;
     background-position-y: -85vh;
-
-    .banner {
-      display: flex;
-      color: transparent;
-      align-items: center;
-      padding: 20px 8%;
-
-      .logo {
-        width: 160px;
-      }
-
-      .nav-bar {
-        text-align: right;
-        flex: 1;
-        margin-top: 8px;
-
-        a {
-          text-decoration: none;
-          margin: 0 20px;
-          color: var(--semiblack);
-          transition: all 0.15s linear;
-
-          &:hover {
-            color: var(--lightgreen);
-          }
-        }
-
-        .active {
-          color: var(--lightgreen);
-        }
-
-        button {
-          cursor: pointer;
-          outline: none;
-          border-style: none;
-          background: transparent;
-          font-size: 16px;
-          line-height: 1;
-          color: var(--lightgreen);
-          border: solid 2px var(--lightgreen);
-          border-radius: 20px;
-          height: 40px;
-          width: 130px;
-          margin-left: 20px;
-          transition: all 0.2s linear;
-
-          &:hover {
-            background: var(--lightgreen);
-            color: var(--white);
-          }
-        }
-      }
-    }
+  
   }
 
   .about {

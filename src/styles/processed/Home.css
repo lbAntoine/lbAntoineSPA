@@ -33,51 +33,6 @@
   background-position-x: -60vh;
   background-position-y: -85vh;
 }
-.main-container .landing .banner {
-  display: flex;
-  color: transparent;
-  align-items: center;
-  padding: 20px 8%;
-}
-.main-container .landing .banner .logo {
-  width: 160px;
-}
-.main-container .landing .banner .nav-bar {
-  text-align: right;
-  flex: 1;
-  margin-top: 8px;
-}
-.main-container .landing .banner .nav-bar a {
-  text-decoration: none;
-  margin: 0 20px;
-  color: var(--semiblack);
-  transition: all 0.15s linear;
-}
-.main-container .landing .banner .nav-bar a:hover {
-  color: var(--lightgreen);
-}
-.main-container .landing .banner .nav-bar .active {
-  color: var(--lightgreen);
-}
-.main-container .landing .banner .nav-bar button {
-  cursor: pointer;
-  outline: none;
-  border-style: none;
-  background: transparent;
-  font-size: 16px;
-  line-height: 1;
-  color: var(--lightgreen);
-  border: solid 2px var(--lightgreen);
-  border-radius: 20px;
-  height: 40px;
-  width: 130px;
-  margin-left: 20px;
-  transition: all 0.2s linear;
-}
-.main-container .landing .banner .nav-bar button:hover {
-  background: var(--lightgreen);
-  color: var(--white);
-}
 .main-container .about {
   display: flex;
   align-items: center;
