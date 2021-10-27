@@ -7,7 +7,7 @@ Je me sers de ce readme pour tenir compte de l'avancée de mon projet de site po
     - 1.0.1 : Taille de l'image fixée (besoin de retravailler la responsivité).
     - 1.0.2 : Banner terminée (plus qu'à attribuer les pages aux boutons (peut-être une animation en plus au hover des petits boutons)).
     - 1.0.3 (15/10) : Parallaxe fonctionnelle.
-    - 1.2.0 (27/10) : Router en place, ajout des différentes pages, modal de contact avec carte animée. Ajout de section pour le dev.to, animation de pages avec animate.css.
+    - 1.1.0 (27/10) : Router en place, ajout des différentes pages, modal de contact avec carte animée. Ajout de section pour le dev.to, animation de pages avec animate.css.
 
 ## **TO-DOs**
 
