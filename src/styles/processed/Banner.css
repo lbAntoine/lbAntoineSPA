@@ -19,19 +19,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: transparent;
+  background: transparent;
+  border: solid 2px red;
   padding: 20px 8%;
   position: absolute;
   z-index: 1;
-  width: 100vw;
+  width: 80vw;
+  height: 7vh;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 10px;
+  transition: all linear;
+  justify-content: space-between;
 }
 .banner .logo {
   width: 160px;
-}
-.banner .nav-bar {
-  text-align: right;
-  flex: 1;
-  margin-top: 8px;
 }
 .banner .nav-bar a {
   text-decoration: none;
@@ -63,6 +66,11 @@
 .banner .nav-bar button:hover {
   background: var(--lightgreen);
   color: var(--white);
+}
+
+.banner-solid {
+  background: #f1f1f1 !important;
+  filter: drop-shadow(0em 0em 0.75em rgba(0, 0, 0, 0.5));
 }
 
 /*# sourceMappingURL=Banner.css.map */

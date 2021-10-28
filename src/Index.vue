@@ -5,13 +5,13 @@ import Contact from './components/Contact.vue'
 export default defineComponent({
     data() {
       return {
-        reveal: false
+        reveal: false,
       }
     },
     methods: {
       toggleModal: function(){
         this.reveal = !this.reveal
-      }
+      },
     },
     components: { 
         'contact': Contact
@@ -21,7 +21,7 @@ export default defineComponent({
 
 <template>
   <!-- Banner -->
-  <div class="banner">
+  <div class="banner" v-banneranimation>
     <img src="./assets/lbAntoine@2x.png" class="logo">
     <div class="nav-bar">
       <a href="/" class="active">Home</a>

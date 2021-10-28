@@ -2,5 +2,11 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router/index'
 import 'animate.css'
+import scrollAnimation from './directives/scrollAnimation'
+import bannerAnimation from './directives/bannerAnimation'
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+
+app.directive('scrollanimation', scrollAnimation).directive('banneranimation', bannerAnimation);
+
+app.use(router).mount('#app')
