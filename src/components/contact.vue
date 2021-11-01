@@ -10,7 +10,7 @@
       <div class="modal card animate__animated animate__fadeInDown">
         <button v-on:click="toggleModal">X</button>
         <div>
-          <profileCard class="profile-card" />
+          <!-- <profileCard class="profile-card" /> -->
         </div>
       </div>
       

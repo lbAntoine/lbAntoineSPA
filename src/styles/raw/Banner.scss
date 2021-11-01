@@ -47,8 +47,9 @@
     // flex: 1;
     // margin-top: 8px;
 
-    a {
+    .link {
       text-decoration: none;
+      cursor: pointer;
       margin: 0 20px;
       color: var(--semiblack);
       transition: all 0.15s linear;
@@ -56,10 +57,10 @@
       &:hover {
         color: var(--lightgreen);
       }
-    }
 
-    .active {
-      color: var(--lightgreen);
+      .active {
+        color: var(--lightgreen);
+      }
     }
 
     button {

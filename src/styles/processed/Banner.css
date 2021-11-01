@@ -36,16 +36,17 @@
 .banner .logo {
   width: 160px;
 }
-.banner .nav-bar a {
+.banner .nav-bar .link {
   text-decoration: none;
+  cursor: pointer;
   margin: 0 20px;
   color: var(--semiblack);
   transition: all 0.15s linear;
 }
-.banner .nav-bar a:hover {
+.banner .nav-bar .link:hover {
   color: var(--lightgreen);
 }
-.banner .nav-bar .active {
+.banner .nav-bar .link .active {
   color: var(--lightgreen);
 }
 .banner .nav-bar button {
