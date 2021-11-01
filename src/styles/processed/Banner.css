@@ -69,7 +69,7 @@
   color: var(--white);
 }
 
-.banner-solid {
+.banner-intersecting {
   background: #f1f1f1 !important;
   filter: drop-shadow(0em 0em 0.75em rgba(0, 0, 0, 0.5));
 }

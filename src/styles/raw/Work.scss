@@ -4,6 +4,8 @@
   justify-content: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
 :root {
   --font1: 'helvetica-w01-bold', sans-serif;
   --font2: 'helvetica', sans-serif;
@@ -25,6 +27,140 @@
 .main-container {
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   perspective: 300px;
+  scroll-snap-type: y mandatory;
+
+  .section {
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    scroll-snap-align: start;
+    @include align-center;
+  }
+
+  .landing {
+    @include align-center;
+
+    @keyframes title {
+      0%,10%,100%
+      {
+        width: 0;
+      }
+      70%,90%
+      {
+        width: 100%;
+      }
+    }
+
+    h1 {
+      position: relative;
+      font-size: 10vw;
+      color: var(--white);
+      -webkit-text-stroke: 0.1vw #dadada;
+
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        color: var(--lightgreen);
+        -webkit-text-stroke: 0 var(--white);
+        border-right: 5px solid var(--lightgreen);
+        overflow: hidden;
+        animation: title 6s linear infinite;
+      }
+    }
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  .bot {
+    @include align-center;
+    justify-content: space-evenly;
+
+    .text-wrapper {
+      width: 500px;
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+
+        span {
+          color: var(--lightgreen);
+        }
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    .presentation {
+      
+      
+      p {
+        font-family: 'Source Code Pro';
+        position: relative;
+
+        &::before, &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+        }
+      }
+
+      .first-line::before, .first-line::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+
+      .first-line::before {
+        background: teal;
+        animation: typewriter 3s steps(11) forwards;
+      }
+    }
+  }
+
+  .csv-converter {
+    @include align-center;
+    justify-content: space-evenly;
+
+    .text-wrapper {
+      width: 500px;
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+
+        span {
+          color: var(--lightgreen);
+        }
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    a {
+      
+      img {
+        width: auto;
+      }
+    }
+  }
 }

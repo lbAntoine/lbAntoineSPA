@@ -27,7 +27,7 @@
     <div class="section about-2" id="about-2">
       <div class="text-wrapper" v-scrollanimation>
           <h1>I studied <span>arts</span> and <span>cinema</span></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Before jumping in the developer train, I graduated from highschool in literature and then studied cinema and arts as my major. This gave me the opportunity to strenghten my creativity and to be curious about a lot of various subjects. As a continuity of my childhood when I took piano and painting classes, this creativity never left me and is very crucial to me when it comes to designing UI, always looking for something fresh and coherent with the subject.</p>
       </div>
       <img class="about-picture-2" src="../assets/childme.jpg" v-scrollanimation>
     </div>
@@ -39,7 +39,7 @@
 
     <!-- End -->
     <div class="end" id="around">
-      <h1 class="mot-de-fin" v-scrollanimation>I am also an <span>amateur photographer</span><br>and <span>philosophy reader</span>. A <span>cat lover</span>,<br><span>card game player</span>, <span>coffee drinker</span> and <span>pizza fanatic</span>.</h1>
+      <h1 class="mot-de-fin" v-scrollanimation>I am also an <span>amateur photographer</span>, <span>language learner</span><br>and <span>philosophy reader</span>. A <span>cat lover</span>,<br><span>card game player</span>, <span>coffee drinker</span> and <span>pizza fanatic</span>.</h1>
       <div class="footer">
         <p class="footer-text">fueled with fun and big dreams :)</p>
         <div class="footer-socials">

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
 :root {
   --font1: "helvetica-w01-bold", sans-serif;
   --font2: "helvetica", sans-serif;
@@ -18,8 +19,120 @@
 .main-container {
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   perspective: 300px;
+  scroll-snap-type: y mandatory;
+}
+.main-container .section {
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes title {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
+.main-container .landing h1 {
+  position: relative;
+  font-size: 10vw;
+  color: var(--white);
+  -webkit-text-stroke: 0.1vw #dadada;
+}
+.main-container .landing h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: var(--lightgreen);
+  -webkit-text-stroke: 0 var(--white);
+  border-right: 5px solid var(--lightgreen);
+  overflow: hidden;
+  animation: title 6s linear infinite;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+.main-container .bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.main-container .bot .text-wrapper {
+  width: 500px;
+}
+.main-container .bot .text-wrapper h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.main-container .bot .text-wrapper h1 span {
+  color: var(--lightgreen);
+}
+.main-container .bot .text-wrapper p {
+  font-size: 1.2em;
+}
+.main-container .bot .presentation p {
+  font-family: "Source Code Pro";
+  position: relative;
+}
+.main-container .bot .presentation p::before, .main-container .bot .presentation p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.main-container .bot .presentation .first-line::before, .main-container .bot .presentation .first-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.main-container .bot .presentation .first-line::before {
+  background: teal;
+  animation: typewriter 3s steps(11) forwards;
+}
+.main-container .csv-converter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.main-container .csv-converter .text-wrapper {
+  width: 500px;
+}
+.main-container .csv-converter .text-wrapper h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.main-container .csv-converter .text-wrapper h1 span {
+  color: var(--lightgreen);
+}
+.main-container .csv-converter .text-wrapper p {
+  font-size: 1.2em;
+}
+.main-container .csv-converter a img {
+  width: auto;
 }
 
 /*# sourceMappingURL=Work.css.map */

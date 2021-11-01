@@ -25,7 +25,7 @@ export default defineComponent({
 
 <template>
   <!-- Banner -->
-  <div class="banner" v-banneranimation>
+  <div class="banner">
     <img src="../../assets/lbAntoine@2x.png" class="logo">
     <div class="nav-bar">
       <banner-link to="/">Home</banner-link>
