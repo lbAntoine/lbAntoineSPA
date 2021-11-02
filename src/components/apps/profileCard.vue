@@ -58,6 +58,7 @@ export default {
     width: 320px;
     height: 450px;
     border-radius: 20px;
+    transform: translate(-60px, -125px);
   }
 
   .containerCard .card .imgBx img {

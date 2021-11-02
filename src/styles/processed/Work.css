@@ -45,6 +45,9 @@
     width: 100%;
   }
 }
+.main-container .landing a {
+  text-decoration: none;
+}
 .main-container .landing h1 {
   position: relative;
   font-size: 10vw;
@@ -74,6 +77,10 @@
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
+}
+.main-container .bot a {
+  text-decoration: none;
+  color: black;
 }
 .main-container .bot .text-wrapper {
   width: 500px;
@@ -112,6 +119,31 @@
   background: teal;
   animation: typewriter 3s steps(11) forwards;
 }
+.main-container .prob-calc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.main-container .prob-calc a {
+  text-decoration: none;
+}
+.main-container .prob-calc a img {
+  width: 750px;
+}
+.main-container .prob-calc .text-wrapper {
+  width: 500px;
+}
+.main-container .prob-calc .text-wrapper h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.main-container .prob-calc .text-wrapper h1 span {
+  color: var(--lightgreen);
+}
+.main-container .prob-calc .text-wrapper p {
+  font-size: 1.2em;
+}
 .main-container .csv-converter {
   display: flex;
   align-items: center;
@@ -131,8 +163,36 @@
 .main-container .csv-converter .text-wrapper p {
   font-size: 1.2em;
 }
+.main-container .csv-converter a {
+  text-decoration: none;
+}
 .main-container .csv-converter a img {
   width: auto;
+}
+.main-container .product-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.main-container .product-card a {
+  text-decoration: none;
+}
+.main-container .product-card .text-wrapper {
+  width: 500px;
+}
+.main-container .product-card .text-wrapper h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.main-container .product-card .text-wrapper h1 span {
+  color: var(--lightgreen);
+}
+.main-container .product-card .text-wrapper p {
+  font-size: 1.2em;
+}
+.main-container .product-card .profile-card {
+  width: 250px;
 }
 
 /*# sourceMappingURL=Work.css.map */

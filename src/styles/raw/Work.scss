@@ -53,6 +53,10 @@
       }
     }
 
+    a {
+      text-decoration: none;
+    }
+
     h1 {
       position: relative;
       font-size: 10vw;
@@ -84,6 +88,11 @@
   .bot {
     @include align-center;
     justify-content: space-evenly;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
 
     .text-wrapper {
       width: 500px;
@@ -135,6 +144,36 @@
     }
   }
 
+  .prob-calc {
+    @include align-center;
+    justify-content: space-evenly;
+
+    a {
+      text-decoration: none;
+
+      img {
+        width: 750px;
+      }
+    }
+
+    .text-wrapper {
+      width: 500px;
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+
+        span {
+          color: var(--lightgreen);
+        }
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+    }
+  }
+
   .csv-converter {
     @include align-center;
     justify-content: space-evenly;
@@ -157,10 +196,41 @@
     }
 
     a {
+      text-decoration: none;
       
       img {
         width: auto;
       }
+    }
+  }
+
+  .product-card {
+    @include align-center;
+    justify-content: space-evenly;
+
+    a {
+      text-decoration: none;
+    }
+
+    .text-wrapper {
+      width: 500px;
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+
+        span {
+          color: var(--lightgreen);
+        }
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    .profile-card {
+      width: 250px;
     }
   }
 }
