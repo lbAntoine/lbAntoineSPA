@@ -4,20 +4,19 @@ import Contact from '../Contact.vue';
 import BannerLink from './BannerLink.vue';
 
 export default defineComponent({
-    data() {
-      return {
-        reveal: false,
-      }
+  data() {
+    return {
+      reveal: false,
+    }
+  },
+  methods: {
+    toggleModal: function(){
+      this.reveal = !this.reveal
     },
-    methods: {
-      toggleModal: function(){
-        this.reveal = !this.reveal
-      },
-    },
-    components: {
+  },
+  components: {
     "contact": Contact,
-    BannerLink
-},
+  }
 })
 
 // export default {}
@@ -28,9 +27,9 @@ export default defineComponent({
   <div class="banner">
     <img src="../../assets/lbAntoine@2x.png" class="logo">
     <div class="nav-bar">
-      <banner-link to="/">Home</banner-link>
-      <banner-link to="/Projects">Projects</banner-link>
-      <banner-link to="/Resume">Resume</banner-link>
+      <BannerLink to="/">Home</BannerLink>
+      <BannerLink to="/Projects">Projects</BannerLink>
+      <BannerLink to="/Resume">Resume</BannerLink>
       <button v-on:click="toggleModal">Contact Antoine</button>
     </div>
   </div>
